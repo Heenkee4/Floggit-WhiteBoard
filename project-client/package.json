@@ -1,0 +1,33 @@
+{
+  "name": "project-client",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "axios": "^0.16.2",
+    "prop-types": "^15.6.0",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "react-redux": "^5.0.6",
+    "react-scripts": "1.0.14",
+    "redux": "^3.7.2",
+    "redux-thunk": "^2.2.0",
+    "uuid": "^3.1.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "npm run css-lint & npm run js-lint & react-scripts test --env=jsdom",
+    "css-lint": "node ./node_modules/stylelint/lib/cli.js 'src/**/*.css'",
+    "js-lint": "node ./node_modules/eslint/bin/eslint.js 'src/**/*.js'",
+    "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "eslint": "^4.5.0",
+    "eslint-config-airbnb": "^15.1.0",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jsx-a11y": "^5.1.1",
+    "eslint-plugin-react": "^7.3.0",
+    "stylelint": "^8.0.0",
+    "stylelint-config-standard": "^17.0.0"
+  }
+}

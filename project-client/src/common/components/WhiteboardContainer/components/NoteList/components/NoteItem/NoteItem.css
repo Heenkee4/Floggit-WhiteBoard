@@ -1,0 +1,35 @@
+@import '../../../../../../css/variables/colors.css';
+
+li.NoteItem-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style-type: none;
+  margin: 0;
+  padding: 5px;
+  border: solid yellow 1px;
+  max-width: 200px;
+}
+
+.NoteItem-value {
+  line-height: 30px;
+}
+
+li.Note-item.added-item {
+  opacity: 0;
+  animation: new-item-animation 1s ease-in forwards;
+}
+
+button {
+  max-height: 20px;
+}
+
+@keyframes new-item-animation {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}

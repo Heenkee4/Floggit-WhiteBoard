@@ -1,0 +1,11 @@
+.NoteInput {
+  display: flex;
+  flex-direction: column;
+  height: 120px;
+  max-width: 200px;
+  border: solid yellow 1px;
+}
+
+.NoteInput-color-select {
+  margin: auto;
+}
